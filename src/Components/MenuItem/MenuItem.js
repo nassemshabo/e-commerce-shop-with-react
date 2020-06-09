@@ -1,20 +1,25 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 //style
 import { Col } from "react-bootstrap";
 import "./MenuItem.scss";
-
-export default function ({ item }) {
+const MenuItem = ({ item, history, match }) => {
   return (
     <Col
       className="box"
       lg={`${item.col}`}
       style={{ backgroundImage: `url(${item.imageUrl}` }}
     >
-      <div className="box-text">
+      <div
+        className="box-text"
+        onClick={() => history.push(`${match.url}${item.linkUrl}`)}
+      >
         <h1 className="box-title">{item.title}</h1>
         <span className="shop-now">shop Now</span>
       </div>
     </Col>
   );
-}
+};
+
+export default withRouter(MenuItem);

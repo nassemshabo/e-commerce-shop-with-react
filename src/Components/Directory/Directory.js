@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
 //style
-import { Container, Row } from "react-bootstrap";
 import "./Directory.scss";
 //component
 import MenuItem from "../MenuItem/MenuItem";
 
-export default function () {
+const Directory = () => {
   const [items, setItems] = useState([
     {
       id: 1,
@@ -45,12 +44,14 @@ export default function () {
     },
   ]);
   return (
-    <Container>
-      <Row className="justify-content-center">
+    <div className="container directory">
+      <div className="home_menu">
         {items.map((item) => (
           <MenuItem key={item.id} item={item} />
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
-}
+};
+
+export default Directory;

@@ -1,11 +1,13 @@
 .box {
+  width: 300px;
   height: 350px;
-  margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
+  background-color: burlywood;
+  display: inline-block;
   .box-text {
     padding: 10px;
     background-color: #ffffff;
