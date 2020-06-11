@@ -7,7 +7,6 @@ import "./Colection.scss";
 import ColectionItem from "../ColectionItem/ColectionItem";
 
 const Colection = ({ data }) => {
-  console.log(data.items);
   return (
     <div className="shop_menu">
       <h1>{data.title}</h1>

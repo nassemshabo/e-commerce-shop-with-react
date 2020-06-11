@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  .logo {
+    .links1 {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .nav-menu {
+    .nav-menu-item {
+      display: inline-block;
+      margin-left: 20px;
+      .links {
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: black;
+      }
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}

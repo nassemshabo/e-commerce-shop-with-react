@@ -2,7 +2,6 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 
 //style
-import { Col } from "react-bootstrap";
 import "./MenuItem.scss";
 const MenuItem = ({ item, history, match }) => {
   return (
