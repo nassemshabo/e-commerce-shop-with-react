@@ -13,6 +13,7 @@ const ShopPage = () => {
 
   return (
     <div className="container">
+      <h1 className="colection-heading">Colection Review</h1>
       {shopData.map((data) => (
         <Colection key={data.id} data={data} />
       ))}

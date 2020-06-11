@@ -1,0 +1,12 @@
+.colection-item {
+  .colection-bg {
+    height: 370px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .colection-text {
+    display: flex;
+    justify-content: space-between;
+  }
+}

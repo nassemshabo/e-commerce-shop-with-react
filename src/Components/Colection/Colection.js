@@ -4,19 +4,20 @@ import React from "react";
 import "./Colection.scss";
 
 //component
+import ColectionItem from "../ColectionItem/ColectionItem";
 
 const Colection = ({ data }) => {
   console.log(data.items);
   return (
     <div className="shop_menu">
       <h1>{data.title}</h1>
-      {data.items
-        .filter((items, idx) => idx < 4)
-        .map((item) => (
-          <div>
-            <p>{item.name}</p>
-          </div>
-        ))}
+      <div className="colection-item-container">
+        {data.items
+          .filter((items, idx) => idx < 4)
+          .map(({ id, ...itemProps }) => (
+            <ColectionItem key={id} {...itemProps} />
+          ))}
+      </div>
     </div>
   );
 };

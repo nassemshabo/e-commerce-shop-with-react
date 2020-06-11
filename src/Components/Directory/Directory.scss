@@ -1,5 +1,7 @@
 .directory {
-  background: brown;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  .home_menu {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+  }
 }

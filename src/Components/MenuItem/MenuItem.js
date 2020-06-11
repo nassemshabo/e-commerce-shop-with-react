@@ -6,9 +6,8 @@ import { Col } from "react-bootstrap";
 import "./MenuItem.scss";
 const MenuItem = ({ item, history, match }) => {
   return (
-    <Col
-      className="box"
-      lg={`${item.col}`}
+    <div
+      className={`box ${item.col}`}
       style={{ backgroundImage: `url(${item.imageUrl}` }}
     >
       <div
@@ -18,7 +17,7 @@ const MenuItem = ({ item, history, match }) => {
         <h1 className="box-title">{item.title}</h1>
         <span className="shop-now">shop Now</span>
       </div>
-    </Col>
+    </div>
   );
 };
 
